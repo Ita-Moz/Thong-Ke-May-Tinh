@@ -1,0 +1,40 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = [1,1,1,2,2,3,4,5,7]
+print("Median (Trung vị):",np.median(x))
+print("Mean:", np.mean(x))
+print("Max:",np.max(x))
+print("Min:", np.min(x))
+print("Độ Lệch:",np.std(x))
+print("Phương Sai:",np.var(x))
+print("Range:",np.max(x)-np.min(x))
+print("Yếu vị: 1")
+print("BOXPLOTS")
+plt.boxplot(x)
+plt.title("Boxplot")
+plt.show()
+
+# Câu2:
+print("Câu2")
+data = np.random.randint(2,10,100,dtype = int)
+print(data)
+print("Median (Trung vị):",np.median(data))
+print("Mean:", np.mean(data))
+print("Max:",np.max(data))
+print("Min:", np.min(data))
+print("Độ Lệch:",np.std(data))
+print("Phương Sai:",np.var(data))
+print("Range:",np.max(data)-np.min(data))
+plt.hist(data, bins = 10, rwidth=0.8)
+plt.xlabel("Value")
+plt.title("TKMTvaUD")
+plt.show()
+data1 = np.random.randint(1,9,100,dtype = int)
+plt.scatter(data,data1)
+plt.xlabel("TKMTvaUD")
+plt.ylabel("CTDL&GT")
+plt.title("SCATTER PLOTS")
+plt.show()
+print("Nhận xét:\nBiểu đồ không thể hiện sự tương quan")
+#Nhận xét:\nBiểu đồ không thể hiện sự tương quan
